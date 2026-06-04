@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeriRail | Next-Gen Personal Rapid Transit (PRT)</title>
+    <meta name="description" content="AeriRail is an innovative, grade-separated urban Personal Rapid Transit (PRT) system powered by an overhead Rigid Guide-Conductor Rail network and eVTOL weight-offload propulsion.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="glass-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                <span class="logo-text">AERI<span>RAIL</span></span>
+            </a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#vehicle">AeriRod Pod</a></li>
+                    <li><a href="#wayside">Wayside Track</a></li>
+                    <li><a href="#calculator">Clearance Calculator</a></li>
+                    <li><a href="#comparison">LRT vs AeriRail</a></li>
+                    <li><a href="#specifications">Technical Specs</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#calculator" class="btn btn-primary btn-sm">Interactive Visualizer</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge animate-fade-in"><i class="fa-solid fa-bolt"></i> Urban Transit Revolution</div>
+                    <h1 class="animate-slide-up">Redefining Urban Mobility <br><span class="highlight">AeriRail PRT</span></h1>
+                    <p class="animate-slide-up delay-1">
+                        A grade-separated, point-to-point transit network combining rigid mechanical track guidance with eVTOL aerodynamic lift offloading. Zero emission, ultra-high frequency, and zero ground footprint.
+                    </p>
+                    <div class="hero-actions animate-slide-up delay-2">
+                        <a href="#calculator" class="btn btn-primary"><i class="fa-solid fa-sliders"></i> Test Clearance Envelope</a>
+                        <a href="#specifications" class="btn btn-secondary"><i class="fa-solid fa-file-invoice"></i> View Tech Spec</a>
+                    </div>
+                    
+                    <div class="hero-stats animate-fade-in delay-3">
+                        <div class="stat-item">
+                            <span class="stat-num">0</span>
+                            <span class="stat-lbl">Ground Space Utilized</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">&ge; 6.0m</span>
+                            <span class="stat-lbl">Vertical Clearance</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">3.1m</span>
+                            <span class="stat-lbl">Rotor Footprint</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in-right">
+                    <div class="hero-card-image glass-panel">
+                        <!-- Concept image is embedded here -->
+                        <img src="assets/hero-prt.png" alt="AeriRod PRT Capsule Concept Render" class="concept-img">
+                        <div class="image-caption">AeriRod Capsule running on an Overhead Rigid Guide-Conductor Rail Network</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z" fill="var(--bg-dark-900)"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">The Grade-Separated PRT Paradigm</h2>
+                    <p class="section-subtitle">Challenging traditional Light Rail Transit (LRT) by introducing a minimalist, aerial point-to-point network that integrates seamlessly into existing urban corridors.</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-cubes-shaft-gradient"></i></div>
+                        <h3>Rigid Composite Network</h3>
+                        <p>Continuous overhead rigid guide-conductor rail composites provide physical tracking constraints and continuous, real-time power supply, eliminating massive ground lines.</p>
+                    </div>
+                    
+                    <div class="card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-fan"></i></div>
+                        <h3>eVTOL Lift Offloading</h3>
+                        <p>Distributed Electric Propulsion (DEP) multi-rotor assembly dynamically generates aerodynamic lift to offload the track structure's dead load by up to 60%, enabling extremely slender supports.</p>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3>Point-to-Point routing</h3>
+                        <p>Individual AeriRod pods bypass intermediate stops. Active mechanical branching switches the pods directly into destination stations, avoiding line congestion entirely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Architecture Section -->
+        <section id="vehicle" class="section-bg section-padding">
+            <div class="container grid-2-equal">
+                <div class="vehicle-info">
+                    <div class="badge"><i class="fa-solid fa-rocket"></i> Core Subsystem</div>
+                    <h2>The AeriRod Capsule</h2>
+                    <p class="description">
+                        An autonomous, aerodynamic carbon-fiber capsule engineered for personal passenger transit. By decoupling cabins into single-family pods, AeriRail delivers continuous high-frequency operations without waiting times.
+                    </p>
+                    
+                    <div class="spec-list-group">
+                        <div class="spec-list-item">
+                            <span class="spec-label">Carbon-Fiber Cabin</span>
+                            <span class="spec-value">1.5 m Height</span>
+                            <p class="spec-desc">Streamlined shell constructed of aerospace composites to minimize tare weight and drag.</p>
+                        </div>
+                        <div class="spec-list-item">
+                            <span class="spec-label">Vertical Main Rotor Shaft</span>
+                            <span class="spec-value">1.0 m Height</span>
+                            <p class="spec-desc">Guarantees aerodynamic buffer zones isolating the passenger cabin from downwash velocity fields.</p>
+                        </div>
+                        <div class="spec-list-item">
+                            <span class="spec-label">Skid Landing Gear</span>
+                            <span class="spec-value">15 cm Height</span>
+                            <p class="spec-desc">Symmetric skids providing static support during docking, boarding, and emergency maintenance.</p>
+                        </div>
+                        <div class="spec-list-item">
+                            <span class="spec-label">DEP Multi-Rotor System</span>
+                            <span class="spec-value">3.1 m Rotor Width</span>
+                            <p class="spec-desc">Generates lift to offload dead weight and provides active auxiliary steering thrust vectoring.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-visual">
+                    <div class="svg-container glass-panel">
+                        <!-- SVG Diagram of AeriRod Specs -->
+                        <svg id="aerirod-spec-svg" class="interactive-diagram" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Grid -->
+                            <defs>
+                                <pattern id="diagram-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+                                </pattern>
+                                <linearGradient id="cabin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1e293b"/>
+                                    <stop offset="100%" stop-color="#0f172a"/>
+                                </linearGradient>
+                                <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.8"/>
+                                    <stop offset="100%" stop-color="#00d2ff" stop-opacity="0.1"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#diagram-grid)" />
+                            
+                            <!-- Rigid Overhead Conductor Rail (Dynamic contact point) -->
+                            <g class="diagram-interactive" data-target="rail">
+                                <rect x="50" y="90" width="300" height="15" rx="4" fill="#334155" stroke="#475569" stroke-width="1.5" />
+                                <line x1="50" y1="105" x2="350" y2="105" stroke="#00d2ff" stroke-width="2" stroke-linecap="round" />
+                                <text x="60" y="80" fill="#94a3b8" font-size="10" font-family="'Orbitron', sans-serif">CONDUCTOR RAIL</text>
+                            </g>
+
+                            <!-- Wayside Support Bracket Line (T-Cantilever representation) -->
+                            <g class="diagram-interactive" data-target="cantilever">
+                                <path d="M 50 97 L 150 97 M 150 40 L 150 97" stroke="#475569" stroke-width="3" stroke-dasharray="2 2" />
+                            </g>
+
+                            <!-- Rotor System (Top of Shaft) -->
+                            <g class="diagram-interactive" data-target="rotor">
+                                <!-- Propellers left/right -->
+                                <ellipse cx="120" cy="50" rx="60" ry="6" fill="rgba(0, 210, 255, 0.2)" stroke="#00d2ff" stroke-width="1" />
+                                <ellipse cx="280" cy="50" rx="60" ry="6" fill="rgba(0, 210, 255, 0.2)" stroke="#00d2ff" stroke-width="1" />
+                                <rect x="70" y="48" width="260" height="4" fill="#64748b" rx="2" />
+                                <!-- Rotors width line indicator -->
+                                <line x1="60" y1="35" x2="340" y2="35" stroke="#ff9f1c" stroke-width="1" />
+                                <path d="M 60 30 L 60 40 M 340 30 L 340 40" stroke="#ff9f1c" stroke-width="1" />
+                                <text x="200" y="28" fill="#ff9f1c" font-size="11" text-anchor="middle" font-family="'Orbitron', sans-serif">3.1m ROTOR WIDTH</text>
+                            </g>
+
+                            <!-- Main Rotor Shaft -->
+                            <g class="diagram-interactive" data-target="shaft">
+                                <rect x="194" y="50" width="12" height="150" fill="#64748b" stroke="#475569" stroke-width="1" />
+                                <!-- Shaft dimension text -->
+                                <line x1="220" y1="50" x2="220" y2="200" stroke="#00d2ff" stroke-width="1" />
+                                <path d="M 215 50 L 225 50 M 215 200 L 225 200" stroke="#00d2ff" stroke-width="1" />
+                                <text x="230" y="130" fill="#00d2ff" font-size="10" font-family="'Orbitron', sans-serif">SHAFT 1.0m</text>
+                            </g>
+
+                            <!-- Collection Shoe -->
+                            <g class="diagram-interactive" data-target="shoe">
+                                <!-- Base offset 30cm, shoe 25-30cm -->
+                                <rect x="180" y="100" width="14" height="25" fill="#ff9f1c" rx="2" />
+                                <line x1="180" y1="112" x2="194" y2="112" stroke="#fff" stroke-width="2" />
+                                <circle cx="180" cy="112" r="3" fill="#ff9f1c" />
+                                <text x="110" y="125" fill="#ff9f1c" font-size="9" font-family="'Orbitron', sans-serif">COLLECTOR SHOE</text>
+                                <!-- Shoe height pointer -->
+                                <line x1="170" y1="100" x2="170" y2="125" stroke="#ff9f1c" stroke-width="0.7" />
+                                <path d="M 167 100 L 173 100 M 167 125 L 173 125" stroke="#ff9f1c" stroke-width="0.7" />
+                            </g>
+
+                            <!-- AeriRod Cabin -->
+                            <g class="diagram-interactive" data-target="cabin">
+                                <rect x="120" y="200" width="160" height="225" rx="35" fill="url(#cabin-grad)" stroke="#00d2ff" stroke-width="2" />
+                                <!-- Cabin Window -->
+                                <rect x="140" y="230" width="120" height="80" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+                                <path d="M 140 250 Q 200 235 260 250" stroke="#00d2ff" stroke-width="1" fill="none" opacity="0.4" />
+                                <!-- Cabin dimension text -->
+                                <line x1="90" y1="200" x2="90" y2="425" stroke="#00d2ff" stroke-width="1" />
+                                <path d="M 85 200 L 95 200 M 85 425 L 95 425" stroke="#00d2ff" stroke-width="1" />
+                                <text x="45" y="320" fill="#00d2ff" font-size="10" font-family="'Orbitron', sans-serif" transform="rotate(-90 45 320)" text-anchor="middle">CABIN BODY 1.5m</text>
+                            </g>
+
+                            <!-- Landing Gear -->
+                            <g class="diagram-interactive" data-target="landinggear">
+                                <!-- Symmetrical skids -->
+                                <path d="M 140 425 L 140 447 M 130 447 L 160 447" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+                                <path d="M 260 425 L 260 447 M 250 447 L 280 447" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+                                <!-- Landing gear dimension indicator -->
+                                <line x1="300" y1="425" x2="300" y2="447" stroke="#00d2ff" stroke-width="1" />
+                                <path d="M 295 425 L 305 425 M 295 447 L 305 447" stroke="#00d2ff" stroke-width="1" />
+                                <text x="310" y="440" fill="#00d2ff" font-size="10" font-family="'Orbitron', sans-serif">GEAR 15cm</text>
+                            </g>
+                        </svg>
+                        <div class="diagram-overlay-info">
+                            <h4 id="diagram-active-title">AeriRod Diagram</h4>
+                            <p id="diagram-active-desc">Hover over any component on the visual schematics to view structural dimensions and spec requirements in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wayside Track & Infrastructure Section -->
+        <section id="wayside" class="section-padding">
+            <div class="container grid-2-equal">
+                <div class="wayside-visual">
+                    <div class="svg-container glass-panel">
+                        <!-- Track infrastructure SVG layout -->
+                        <svg id="wayside-infra-svg" class="interactive-diagram" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Grid -->
+                            <rect width="100%" height="100%" fill="url(#diagram-grid)" />
+                            
+                            <!-- Wayside Column / Pole -->
+                            <g class="diagram-interactive" data-target="pole">
+                                <!-- Foundation pad -->
+                                <rect x="40" y="450" width="80" height="30" fill="#334155" rx="2" />
+                                <rect x="60" y="440" width="40" height="10" fill="#475569" />
+                                <!-- Steel Pole -->
+                                <rect x="73" y="105" width="14" height="335" fill="url(#cabin-grad)" stroke="#475569" stroke-width="1.5" />
+                                <text x="50" y="300" fill="#94a3b8" font-size="10" font-family="'Orbitron', sans-serif" transform="rotate(-90 50 300)" text-anchor="middle">WAYSIDE SUPPORT POLE</text>
+                            </g>
+
+                            <!-- T-Cantilever Arm -->
+                            <g class="diagram-interactive" data-target="t-cantilever">
+                                <rect x="87" y="105" width="133" height="14" fill="#1e293b" stroke="#475569" stroke-width="1" />
+                                <path d="M 87 119 L 105 135 L 105 119 Z" fill="#334155" />
+                                <!-- Track offset indicator -->
+                                <line x1="80" y1="85" x2="220" y2="85" stroke="#ff9f1c" stroke-width="1" />
+                                <path d="M 80 80 L 80 90 M 220 80 L 220 90" stroke="#ff9f1c" stroke-width="1" />
+                                <text x="150" y="75" fill="#ff9f1c" font-size="10" font-family="'Orbitron', sans-serif" text-anchor="middle">1.0m OFFSET</text>
+                            </g>
+
+                            <!-- Conductor Guide Track -->
+                            <g class="diagram-interactive" data-target="track-system">
+                                <circle cx="220" cy="112" r="14" fill="#0f172a" stroke="#00d2ff" stroke-width="2" />
+                                <circle cx="220" cy="112" r="4" fill="#00d2ff" />
+                                <text x="240" y="116" fill="#00d2ff" font-size="10" font-family="'Orbitron', sans-serif">GUIDE RAIL</text>
+                            </g>
+
+                            <!-- Rotor sweep safety clearance boundary -->
+                            <g class="diagram-interactive" data-target="rotor-clearance">
+                                <!-- Conductor rail height horizontal line -->
+                                <line x1="0" y1="112" x2="400" y2="112" stroke="rgba(255, 159, 28, 0.4)" stroke-dasharray="4 4" stroke-width="1" />
+                                <text x="390" y="105" fill="#ff9f1c" font-size="9" font-family="'Orbitron', sans-serif" text-anchor="end">CONDUCTION PLANE</text>
+                                
+                                <!-- Pole height restriction tag -->
+                                <path d="M 80 95 L 75 105 L 85 105 Z" fill="#ef4444" />
+                                <text x="95" y="102" fill="#ef4444" font-size="8" font-family="'Inter', sans-serif">Apex below Rail Plane</text>
+                            </g>
+
+                            <!-- Ground Marking Safety Zone -->
+                            <g class="diagram-interactive" data-target="ground-marking">
+                                <rect x="180" y="470" width="80" height="10" fill="repeating-linear-gradient(45deg, #ff9f1c, #ff9f1c 10px, #121824 10px, #121824 20px)" opacity="0.6" />
+                                <text x="220" y="495" fill="#ff9f1c" font-size="8" font-family="'Orbitron', sans-serif" text-anchor="middle">SAFETY BUFFER ZONE</text>
+                            </g>
+                        </svg>
+                        <div class="diagram-overlay-info">
+                            <h4 id="wayside-active-title">Wayside Alignment</h4>
+                            <p id="wayside-active-desc">Hover over columns, cantilevers, and buffer zones to inspect wayside infrastructure parameters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wayside-info">
+                    <div class="badge"><i class="fa-solid fa-road"></i> Wayside Infrastructure</div>
+                    <h2>Track & Guide Infrastructure</h2>
+                    <p class="description">
+                        Designed with utility and aesthetic simplicity, AeriRail replaces heavy concrete bridge girders with slender steel davit columns. Guide networks are installed over traffic lanes, mimicking historical trolley wire locations.
+                    </p>
+                    
+                    <div class="spec-list-group">
+                        <div class="spec-list-item">
+                            <span class="spec-label">Cantilever Offset</span>
+                            <span class="spec-value">1.0 m Lateral Distance</span>
+                            <p class="spec-desc">Conductor guide tracks are offset horizontally from support poles, maintaining safe clearances from wayside obstacles.</p>
+                        </div>
+                        <div class="spec-list-item">
+                            <span class="spec-label">Anti-Interference Geometry</span>
+                            <span class="spec-value">Pole Apex &le; Rail Height</span>
+                            <p class="spec-desc">Support columns are height-restricted. Their apex cannot extend past the conductor rail plane, ensuring that the 3.1 m wide rotor blades pass freely above support structures without collision risk.</p>
+                        </div>
+                        <div class="spec-list-item">
+                            <span class="spec-label">Safety Buffer Zone</span>
+                            <span class="spec-value">Roadway Striping</span>
+                            <p class="spec-desc">High-visibility right-of-way paint markings on the roadway explicitly identify vehicle tracking zones below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clearance & Support Calculator Section -->
+        <section id="calculator" class="section-bg section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Spatial Envelope & Clearance Calculator</h2>
+                    <p class="section-subtitle">Dynamically calculate wayside infrastructure dimensions and safety envelopes by simulating different ground traffic conditions.</p>
+                </div>
+                
+                <div class="grid-calculator glass-panel">
+                    <div class="calculator-inputs">
+                        <h3>Configuration Panel</h3>
+                        <p class="panel-desc">Adjust the variables below to test engineering feasibility and auto-calculate required pole heights.</p>
+                        
+                        <div class="form-group">
+                            <div class="slider-header">
+                                <label for="car-height"><i class="fa-solid fa-car"></i> Ground Traffic Height</label>
+                                <span class="slider-val" id="car-height-val">1.80 m</span>
+                            </div>
+                            <input type="range" id="car-height" min="1.0" max="4.5" step="0.1" value="1.8">
+                            <span class="input-helper">Represents vehicle roofs in ground lanes (e.g., sedan: ~1.5m, SUV: ~1.8m, truck/bus: ~4.0m).</span>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="slider-header">
+                                <label for="safety-clearance"><i class="fa-solid fa-shield-halved"></i> Safety Clearance</label>
+                                <span class="slider-val" id="safety-clearance-val">6.00 m</span>
+                            </div>
+                            <input type="range" id="safety-clearance" min="5.0" max="8.0" step="0.1" value="6.0">
+                            <span class="input-helper">Minimum vertical safety margin between landing gear and ground vehicles (Required: &ge; 6.0m).</span>
+                        </div>
+
+                        <div class="fixed-spec-card">
+                            <h4>Standardized AeriRod Constraints</h4>
+                            <div class="fixed-grid">
+                                <div><span>Landing Gear:</span> 15 cm</div>
+                                <div><span>Cabin Body:</span> 1.50 m</div>
+                                <div><span>Rotor Shaft:</span> 1.00 m</div>
+                                <div><span>Shoe Offset:</span> 30 cm</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-visual">
+                        <!-- Responsive dynamic SVG for clearance envelope -->
+                        <div class="svg-calc-container">
+                            <svg id="calc-envelope-svg" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="calc-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+                                        <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(255, 255, 255, 0.02)" stroke-width="1"/>
+                                    </pattern>
+                                    <linearGradient id="road-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e293b"/>
+                                        <stop offset="100%" stop-color="#0f172a"/>
+                                    </linearGradient>
+                                    <linearGradient id="safety-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(255, 159, 28, 0.15)"/>
+                                        <stop offset="100%" stop-color="rgba(255, 159, 28, 0.0)"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#calc-grid)" />
+                                
+                                <!-- Ground / Roadway -->
+                                <rect x="0" y="550" width="500" height="50" fill="url(#road-grad)" />
+                                <line x1="0" y1="550" x2="500" y2="550" stroke="#334155" stroke-width="2" />
+                                <text x="250" y="580" fill="#475569" font-size="11" font-family="'Orbitron', sans-serif" text-anchor="middle">GROUND ROADWAY</text>
+                                
+                                <!-- Ground Traffic representation -->
+                                <g id="calc-ground-car">
+                                    <!-- Dynamic Height: Base of car at 550, roof changes -->
+                                    <rect id="calc-car-body" x="200" y="478" width="100" height="72" fill="#1e293b" stroke="#475569" stroke-width="1.5" rx="8" />
+                                    <!-- Windshield -->
+                                    <path d="M 280 500 L 295 515 L 295 540 Z" fill="#334155" />
+                                    <text id="calc-car-label" x="250" y="515" fill="#94a3b8" font-size="9" text-anchor="middle">CAR</text>
+                                </g>
+
+                                <!-- Safety Clearance Zone (dynamic gradient block) -->
+                                <rect id="calc-safety-zone" x="180" y="238" width="140" height="240" fill="url(#safety-grad)" stroke="#ff9f1c" stroke-width="1" stroke-dasharray="4 4" />
+                                <text id="calc-safety-text" x="250" y="358" fill="#ff9f1c" font-size="11" font-family="'Orbitron', sans-serif" text-anchor="middle">SAFETY CLEARANCE (6.0m)</text>
+
+                                <!-- AeriRod Pod (Dynamic positioning) -->
+                                <g id="calc-pod">
+                                    <!-- Landing Gear -->
+                                    <path d="M 220 220 L 220 238 M 210 238 L 230 238" stroke="#64748b" stroke-width="3" stroke-linecap="round" />
+                                    <path d="M 280 220 L 280 238 M 270 238 L 290 238" stroke="#64748b" stroke-width="3" stroke-linecap="round" />
+                                    
+                                    <!-- Cabin body (Height 1.5m, represented as 60px) -->
+                                    <rect x="200" y="100" width="100" height="120" rx="25" fill="#0f172a" stroke="#00d2ff" stroke-width="2" />
+                                    <rect x="215" y="115" width="70" height="40" rx="10" fill="#1e293b" />
+                                    
+                                    <!-- Shaft (Height 1.0m, represented as 80px) -->
+                                    <rect x="246" y="20" width="8" height="80" fill="#64748b" />
+                                    
+                                    <!-- Collection shoe (30cm above cabin roof) -->
+                                    <rect x="236" y="76" width="10" height="18" fill="#ff9f1c" rx="1" />
+                                    <line x1="236" y1="85" x2="246" y2="85" stroke="#fff" stroke-width="1" />
+                                    
+                                    <!-- Rotor assembly -->
+                                    <ellipse cx="200" cy="20" rx="45" ry="4" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8" />
+                                    <ellipse cx="300" cy="20" rx="45" ry="4" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8" />
+                                    <rect x="160" y="18" width="180" height="4" fill="#475569" rx="2" />
+                                </g>
+
+                                <!-- Conductor Guide Rail (linked dynamically to collection shoe y position) -->
+                                <g id="calc-rail-group">
+                                    <line id="calc-rail" x1="50" y1="76" x2="450" y2="76" stroke="#ff9f1c" stroke-width="3" stroke-linecap="round" />
+                                    <circle id="calc-rail-node" cx="236" cy="85" r="4" fill="#00d2ff" />
+                                    <text id="calc-rail-label" x="440" y="65" fill="#ff9f1c" font-size="10" font-family="'Orbitron', sans-serif" text-anchor="end">CONDUCTOR RAIL</text>
+                                </g>
+
+                                <!-- Wayside Pole (linked to Rail y position) -->
+                                <g id="calc-pole-group">
+                                    <!-- Vertical Column -->
+                                    <rect id="calc-pole" x="65" y="76" width="12" height="474" fill="url(#cabin-grad)" stroke="#475569" stroke-width="1" />
+                                    <!-- Cantilever arm reaching rail -->
+                                    <rect id="calc-cantilever" x="77" y="76" width="159" height="10" fill="#334155" />
+                                    <!-- Red warning dot representing height restriction -->
+                                    <circle id="calc-pole-top" cx="71" cy="76" r="3" fill="#ef4444" />
+                                </g>
+
+                                <!-- Dimensional markers / labels -->
+                                <g id="calc-markers">
+                                    <!-- Total height of pole indicator -->
+                                    <line x1="30" y1="76" x2="30" y2="550" stroke="#00d2ff" stroke-width="1" />
+                                    <path d="M 25 76 L 35 76 M 25 550 L 35 550" stroke="#00d2ff" stroke-width="1" />
+                                    <text id="calc-pole-height-txt" x="40" y="320" fill="#00d2ff" font-size="11" font-family="'Orbitron', sans-serif" transform="rotate(-90 40 320)" text-anchor="middle">Pole: 9.75m</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-results glass-panel">
+                        <h3>Dynamic Calculations</h3>
+                        <div class="calc-results-grid">
+                            <div class="result-box">
+                                <span class="result-lbl">Conductor Rail height</span>
+                                <span class="result-val" id="res-rail-height">9.75 m</span>
+                                <span class="result-formula">H<sub>car</sub> + H<sub>clear</sub> + H<sub>gear</sub> + H<sub>cabin</sub> + H<sub>shoe</sub></span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-lbl">Max Support Pole Height</span>
+                                <span class="result-val highlight" id="res-pole-height">9.75 m</span>
+                                <span class="result-formula">Limited by Conductor Rail plane</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-lbl">AeriRod Rotor Plane Height</span>
+                                <span class="result-val" id="res-rotor-height">10.45 m</span>
+                                <span class="result-formula">Cabin Roof + Shaft (1.0m)</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-lbl">Rotor-to-Pole Clearance</span>
+                                <span class="result-val success" id="res-rotor-clearance">70 cm</span>
+                                <span class="result-formula">Rotor Plane is safely above columns</span>
+                            </div>
+                        </div>
+                        <div class="calculator-alert">
+                            <span class="alert-icon"><i class="fa-solid fa-circle-info"></i></span>
+                            <p class="alert-text">
+                                Because the rotor plane (10.45 m) sits exactly 70 cm above the pole apex restriction line (9.75 m), the 3.1m wide rotors sweep cleanly through roadway airspace without interference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AeriRail vs. Traditional LRT Section -->
+        <section id="comparison" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Comparative Analysis</h2>
+                    <p class="section-subtitle">How AeriRail Personal Rapid Transit outperforms traditional Light Rail Transit (LRT) in modern cities.</p>
+                </div>
+                
+                <div class="comparison-container">
+                    <table class="comparison-table glass-panel">
+                        <thead>
+                            <tr>
+                                <th>Operational Parameter</th>
+                                <th class="col-highlight">AeriRail PRT System</th>
+                                <th>Traditional Light Rail (LRT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="param-name">Infrastructure Footprint</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> Minimal (Utility-pole size anchors)</td>
+                                <td class="danger-cell"><i class="fa-solid fa-circle-xmark"></i> Large (Massive dedicated tracks or elevated viaducts)</td>
+                            </tr>
+                            <tr>
+                                <td class="param-name">Vertical Weight on Guideway</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> 40-60% Offloaded via Aerodynamic DEP lift</td>
+                                <td class="danger-cell"><i class="fa-solid fa-circle-xmark"></i> 100% Dead weight exerted directly on structures</td>
+                            </tr>
+                            <tr>
+                                <td class="param-name">Service Availability</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> On-Demand (Pods run immediately, 24/7)</td>
+                                <td class="warning-cell"><i class="fa-solid fa-circle-exclamation"></i> Scheduled (5-20 min headways)</td>
+                            </tr>
+                            <tr>
+                                <td class="param-name">Passenger Routing</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> Non-Stop, Point-to-Point direct</td>
+                                <td class="danger-cell"><i class="fa-solid fa-circle-xmark"></i> Multi-stop, local service with delays</td>
+                            </tr>
+                            <tr>
+                                <td class="param-name">Capital Expenditure (CAPEX)</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> Low (Prefabricated guideways & davit supports)</td>
+                                <td class="danger-cell"><i class="fa-solid fa-circle-xmark"></i> High to Extremely High ($80M+ per mile)</td>
+                            </tr>
+                            <tr>
+                                <td class="param-name">Ground Traffic Intrusion</td>
+                                <td class="col-highlight success-cell"><i class="fa-solid fa-circle-check"></i> Zero (Suspended &ge; 6.0m above traffic)</td>
+                                <td class="warning-cell"><i class="fa-solid fa-circle-exclamation"></i> Moderate (Shares crossings, causes gridlock)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specification Matrix Section -->
+        <section id="specifications" class="section-bg section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Core Spatial Parameter Matrix</h2>
+                    <p class="section-subtitle">Engineering constraints and design limits defined by the AeriRail Technical Specification.</p>
+                </div>
+                
+                <div class="matrix-filter-bar glass-panel">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="matrix-search" placeholder="Search parameters (e.g. cabin, shaft, rotor)...">
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All Subsystems</button>
+                        <button class="filter-btn" data-filter="vehicle">Vehicle</button>
+                        <button class="filter-btn" data-filter="wayside">Wayside</button>
+                        <button class="filter-btn" data-filter="clearance">Clearance</button>
+                    </div>
+
+                    <div class="unit-toggle-container">
+                        <span class="unit-lbl">Unit System:</span>
+                        <div class="unit-switch" id="unit-toggle">
+                            <span class="unit-opt active" data-unit="metric">Metric</span>
+                            <span class="unit-opt" data-unit="imperial">Imperial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="matrix-container">
+                    <table class="matrix-table glass-panel" id="spec-matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Subsystem / Category</th>
+                                <th>Parameter Name</th>
+                                <th>Nominal Constraint</th>
+                                <th>Engineering Description</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Section -->
+        <section id="inquiry" class="section-padding">
+            <div class="container grid-2-equal">
+                <div class="inquiry-info">
+                    <h2>Municipal Deployment & Consultations</h2>
+                    <p>
+                        AeriRail technology provides cities with a cost-effective alternative to mass-transit expansion. Our team offers spatial envelope audits, aerodynamic downwash studies, and utility pole network integrations.
+                    </p>
+                    <div class="inquiry-points">
+                        <div class="point-item">
+                            <span class="point-icon"><i class="fa-solid fa-file-shield"></i></span>
+                            <div>
+                                <h4>Engineering Feasibility Studies</h4>
+                                <p>We calculate spacing layouts tailored to local transit codes, including clearance validation.</p>
+                            </div>
+                        </div>
+                        <div class="point-item">
+                            <span class="point-icon"><i class="fa-solid fa-city"></i></span>
+                            <div>
+                                <h4>Visual Impact & Right-of-Way Audits</h4>
+                                <p>Simulating pole placements and road striping zones to ensure zero impact on street traffic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inquiry-form-container">
+                    <form id="contact-form" class="inquiry-form glass-panel" onsubmit="event.preventDefault(); alert('Inquiry successfully logged! Our engineering team will contact you.');">
+                        <h3>Transit Assessment Request</h3>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" placeholder="j.doe@citygov.org" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-municipality">Municipality / Organization</label>
+                            <input type="text" id="contact-municipality" placeholder="Department of Transportation" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-notes">Project Overview & Clearance Target</label>
+                            <textarea id="contact-notes" rows="4" placeholder="Briefly describe the corridor, required passenger capacity, and target vertical clearance envelopes..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                    <span class="logo-text">AERI<span>RAIL</span></span>
+                </a>
+                <p>Grade-separated high-frequency Personal Rapid Transit solutions. Innovation under rigid constraint.</p>
+            </div>
+            <div class="footer-links">
+                <h4>System Technical Specifications</h4>
+                <ul>
+                    <li><a href="#vehicle">AeriRod Capsule</a></li>
+                    <li><a href="#wayside">Cantilever Routing</a></li>
+                    <li><a href="#calculator">Clearance Calculations</a></li>
+                    <li><a href="#specifications">Engineering Parameter Matrix</a></li>
+                </ul>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 AeriRail Technologies. All rights reserved. Engineering specifications compliant with PRT-Grade-A codes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
