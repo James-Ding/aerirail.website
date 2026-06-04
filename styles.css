@@ -26,7 +26,7 @@
     --danger-bg: rgba(239, 68, 68, 0.1);
     
     --font-sans: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-mono: 'Geist Mono', 'JetBrains Mono', Consolas, monospace;
+    --font-mono: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     
     --glass-bg: rgba(17, 22, 34, 0.75);
     --glass-border: rgba(255, 255, 255, 0.08);
